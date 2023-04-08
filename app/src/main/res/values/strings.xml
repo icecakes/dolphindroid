@@ -2,29 +2,29 @@
 <resources>
 
     <string name="app_name">Dolphindroid</string>
-    <string name="about">About</string>
+    <string name="about">关于</string>
     <string name="about_content">Copyright © 2015, Flavio Zavan.
         This application is free software,
         for more information and access to the source code, visit
-        http://github.com/nebososo/dolphindroid</string>
-    <string name="server_address">Server Address</string>
-    <string name="server_port">Server Port</string>
+        http://github.com/nebososo/dolphindroid \n 版本修改：icecakes</string>
+    <string name="server_address">服务器地址</string>
+    <string name="server_port">服务器端口</string>
     <string name="custom_connection">Custom Connection</string>
-    <string name="connect">Connect</string>
-    <string name="cancel">Cancel</string>
+    <string name="connect">连接</string>
+    <string name="cancel">取消</string>
     <string name="custom">Custom</string>
     <string name="title_activity_controller">ControllerActivity</string>
     <string name="a">A</string>
     <string name="b">B</string>
     <string name="minus">-</string>
-    <string name="home">Home</string>
+    <string name="home">HOME</string>
     <string name="plus">+</string>
     <string name="one">1</string>
     <string name="two">2</string>
-    <string name="up">Up</string>
-    <string name="down">Down</string>
-    <string name="left">Left</string>
-    <string name="right">Right</string>
+    <string name="up">↑</string>
+    <string name="down">↓</string>
+    <string name="left">←</string>
+    <string name="right">→</string>
     <string name="ur">U+R</string>
     <string name="dr">D+R</string>
     <string name="dl">D+L</string>
@@ -32,6 +32,8 @@
     <string name="presses_to_go">" more back button presses to disconnect"</string>
     <string name="resolv_failed">Failed to resolve hostname</string>
     <string name="socket_failed">Failed to open socket</string>
+    <string name="app_title">Dolphindroid</string>
+    <string name="auth_edit">icecakes edit</string>
 
 
 </resources>

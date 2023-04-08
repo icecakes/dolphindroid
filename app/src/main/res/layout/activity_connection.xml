@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@color/main"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ConnectionActivity">
@@ -8,39 +9,94 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <RadioGroup
+            android:id="@+id/group_server"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:id="@+id/group_server"
-            android:focusableInTouchMode="false"/>
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ic_launcher"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@drawable/ic_launcher"/>
+            <TextView
+                android:id="@+id/app_title"
+                android:gravity="center"
+                android:textSize="50sp"
+                android:textColor="@color/white"
+                android:layout_below="@id/ic_launcher"
+                android:text="@string/app_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/about"
-                android:id="@+id/button_about" />
+            <TextView
+                android:id="@+id/auth_edit"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_below="@id/app_title"
+                android:text="@string/auth_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/custom"
-                android:id="@+id/button_custom" />
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:background="@drawable/bnt_corners_select"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:id="@+id/button_about" />
 
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/connect"
-                android:id="@+id/button_connect" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/custom"
+                    android:visibility="gone"
+                    android:id="@+id/button_custom" />
 
-        </LinearLayout>
+                <Button
+                    android:background="@drawable/bnt_corners_select"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:textSize="20sp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:text="@string/connect"
+                    android:id="@+id/button_connect" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
 
     </LinearLayout>
 

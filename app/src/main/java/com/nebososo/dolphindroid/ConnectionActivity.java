@@ -108,11 +108,12 @@ public class ConnectionActivity extends Activity {
         connectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int chosenID = serverGroup.getCheckedRadioButtonId();
+                customDialog.show();
+                /*int chosenID = serverGroup.getCheckedRadioButtonId();
                 if (chosenID != -1) {
                     UdpwiiServer chosenServer = localActiveServersList.get(chosenID);
                     switchToController(chosenServer.address, chosenServer.port, false);
-                }
+                }*/
             }
         });
 
